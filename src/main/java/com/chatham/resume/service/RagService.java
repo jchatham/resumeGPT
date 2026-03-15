@@ -84,8 +84,8 @@ public class RagService {
 
         //What's sent out to the API
         String prompt = """
-                Answer the question using the context below.
-                Please answer using the text exactly as it appears in the resume, preserving all spaces and punctuation.
+                Please answer using only the content from the resume.
+                Do not include any header lines like "=== EXPERIENCE ===" or "=== EDUCATION ===".
                 
                 Context:
                 %s

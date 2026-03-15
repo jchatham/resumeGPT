@@ -1,79 +1,79 @@
-﻿Jefferey Chatham
+﻿=== INFO ===
+Jefferey Chatham
 Email: Jeff.Chatham@gmail.com
 Phone: (850) 445-7361
 LinkedIn: https://www.linkedin.com/in/jeff-chatham-7337a1208/ 
-GitHub: https://github.com/jchatham 
-Experience 
-Application Systems Programmer III | Florida Department of Environmental Protection | Tallahassee, FL June 2015 – November 2020
-● Architected, developed, and maintained critical Java applications/microservices and PHP applications/libraries for a large state agency. 
-● Spearheaded the development of the department's first Java-based microservice, moving the functionality from an existing Single Sign-On (SSO) portal into a new, secure Jersey-based service, specifically eliminating a potential security vulnerability where usernames and passwords could be transmitted in plaintext. Updated the PHP SSO component to align with the Java authorization/authentication library. 
-● Led the full rewrite and ongoing maintenance of the SRF (State Revolving Fund) program, a critical federal application managing wastewater, stormwater, and drinking water loans, grants, and legislative projects across Florida. This complex application, required for every state, was prone to constant bug tickets, which were significantly reduced post-rewrite. 
-● Rewrote the database interaction layer of the SRF application utilizing Regex within IntelliJ IDEA to move all package calls to Hibernate, dramatically accelerating a months-long task to approximately 30 minutes at the package level, applied at the package level using backticks. 
-● Developed PHP libraries for the MergeToPdf microservice and DepDac (Dynamic Assembly Component), which were instrumental in token handling and secure data exchange. 
-● Managed and optimized Oracle and PostgreSQL databases, ensuring data integrity and application performance. 
-● Utilized Object-Oriented Programming (OOP) principles to design and implement scalable and maintainable code.
-● Contributed to various phases of the software development lifecycle, including requirements gathering, design, coding, testing, and deployment. 
-● Taught several classes, including one on Astrogrep, a grep front-end tool, and wrote comprehensive migration guides and several wiki pages on diverse topics that were used by the whole team (~70 people). 
-● Skills: Java, PHP, Oracle, PostgreSQL, Apache Tomcat, Linux, Bash, MacOS, Git, Spring Framework, Hibernate, SQL, PL/SQL, Object-Oriented Programming Languages, DB design, AWS, Redshift, Azure, JUnit, SSH, Postman, Mailhog, Bootstrap, Regex, Google Docs, Design Patterns, Data Structures, and MS Office. 
+GitHub: https://github.com/jchatham
+
+=== EXPERIENCE ===
+Application Systems Programmer III
+Florida Department of Environmental Protection
+Tallahassee, FL June 2015 – November 2020
+- Architected, developed, and maintained critical Java applications/microservices and PHP applications/libraries for a large state agency
+- Spearheaded the development of the department's first Java-based microservice, moving functionality from an existing SSO portal into a new Jersey-based service
+- Eliminated a potential security vulnerability where usernames and passwords could be transmitted in plaintext
+- Updated the PHP SSO component to align with Java authorization/authentication library
+- Led the full rewrite and ongoing maintenance of the SRF (State Revolving Fund) program, a critical federal application managing wastewater, stormwater, and drinking water loans, grants, and legislative projects across Florida
+- This complex application, required for every state, was prone to constant bug tickets, which were significantly reduced post-rewrite
+- Rewrote the database interaction layer of the SRF application using Regex within IntelliJ IDEA
+- Moved all package calls to Hibernate, reducing a months-long task to ~30 minutes at the package level
+- Developed PHP libraries for the MergeToPdf microservice and DepDac (Dynamic Assembly Component), which were instrumental in token handling and secure data exchange
+- Managed and optimized Oracle and PostgreSQL databases, ensuring data integrity and application performance
+- Utilized Object-Oriented Programming (OOP) principles to design and implement scalable and maintainable code
+- Contributed to various phases of the software development lifecycle, including requirements gathering, design, coding, testing, and deployment
+- Taught several classes, including one on Astrogrep, a grep front-end tool, and wrote comprehensive migration guides and several wiki pages on diverse topics that were used by the whole team (~70 people)
+- Skills: Java, PHP, Oracle, PostgreSQL, Apache Tomcat, Linux, Bash, MacOS, Git, Spring Framework, Hibernate, SQL, PL/SQL, Object-Oriented Programming Languages, DB design, AWS, Redshift, Azure, JUnit, SSH, Postman, Mailhog, Bootstrap, Regex, Google Docs, Design Patterns, Data Structures, and MS Office
+
+Application Systems Programmer II
+Florida Department of Environmental Protection
+Tallahassee, FL May 2014 – June 2015
+- Designed and developed the Rez equipment reservation system, a critical application for departmental resource management
+- Developed and maintained Java web applications and PHP scripts to support departmental operations
+- Worked on a starter project for new application development
+- Independently updated the starter project to a new look and feel
+- Collaborated with end-users to gather requirements and translate them into functional software solutions
+- Conducted rigorous testing and debugging to ensure application stability and reliability
+- Assisted in the maintenance and optimization of existing database systems, including MySQL and MariaDB
+- Skills: Java, PHP, MySQL, MariaDB, Oracle, SQL, PL/SQL, Linux, Bash, Git, Object-Oriented Programming Languages, DB design, JUnit, SSH, Bootstrap
+
+Intern
+URS Corporation at Kennedy Space Center
+Merritt Island, FL
+Summer 2013
+- NASA subcontractor over civil engineering 
+- Participated in software development projects supporting real estate office and data analysis
+- Gained hands-on experience in mission-critical software environment
 
 
+Intern
+IAIP
+Florida A&M University
+Tallahassee, FL
+Fall 2012– Spring 2014
+- Contributed to research projects involving data collection and preliminary analysis
+- Developed skills in data organization and basic statistical software
+- Maintained many Macbook Pros that could be checked out by any professor
+- Skills: MySql, PHP, and MacOS
 
 
+=== EDUCATION ===
+Bachelor of Science in Computer Information Science
+Florida A&M University (FAMU)
+Tallahassee, FL
+Graduated: May 2014
+- GPA: 3.9/4.0 
+- Summa Cum Laude 
 
+Associates of Science in Network Studies
+Tallahassee Community College
+Tallahassee, Fl
+Graduated May 2006
+- Graduated with honors
 
-
-
-
-
-Application Systems Programmer II | Florida Department of Environmental Protection | Tallahassee, FL May 2014 – June 2015 
-● Designed and developed the Rez equipment reservation system, a critical application for departmental resource management, choosing the underlying framework and being the sole developer proficient in its language. This application utilized DB design best practices. 
-● Developed and maintained Java web applications and PHP scripts to support departmental operations. 
-● Worked on a starter project for new application development. 
-● Independently updated the starter project to a new look and feel. 
-● Collaborated with end-users to gather requirements and translate them into functional software solutions. 
-● Conducted rigorous testing and debugging to ensure application stability and reliability. 
-● Assisted in the maintenance and optimization of existing database systems, including MySQL and MariaDB. 
-● Skills: Java, PHP, MySQL, MariaDB, Oracle, SQL, PL/SQL, Linux, Bash, Git, Object-Oriented Programming Languages, DB design, JUnit, SSH, Bootstrap. 
-          Intern | URS Corporation at Kennedy Space Center | Merritt Island, FL Summer 2013 
-● NASA subcontractor over civil engineering 
-● Participated in software development projects supporting real estate office and data analysis. 
-● Gained hands-on experience in mission-critical software environment. 
-
-
-Intern | IAIP (Interim Assistant in Research, Florida A&M University) | Tallahassee, FL Fall 2012– Spring 2014
-
-
-
-
-● Contributed to research projects involving data collection and preliminary analysis. 
-● Developed skills in data organization and basic statistical software. 
-● Maintained many Macbook Pros that could be checked out by any professor ● Skills: MySql, PHP, MacOS 
-
-
-                          Education 
-Bachelor of Science in Computer Information Science | Florida A&M University (FAMU) | Tallahassee, FL Graduated: May 2014 
-● GPA: 3.9/4.0 
-● Summa Cum Laude 
-
-
-
-
-
-
-
-
-
-
-
-
-                Associates of Science in Network Studies  | Tallahassee Community College  |  Tallahassee, Fl   
-                          Graduated May 2006
-● Graduated with honors
-Skills 
-● Programming Languages: Java, PHP, SQL, PL/SQL, Bash, Regex, Python, ClassicASP, Javascript, jQuery, React, C++, MIPS, CLIPS, Haskell 
-● ProgrammingSkills: Object-Oriented Programming, Design Patterns, Unit Testing, Debugging,
-      Database normalization, Agile & Scrum, Continuous Integration & Continuous Deployment       (CI/CD), REST API design & development
-● Frameworks/Libraries: Spring, Spring Boot, Struts, Struts 2, Hibernate, Jersey, JUnit, Bootstrap,     Codeigniter, Laravel, React, jQuery, Maven, Gradle
-● Databases: Oracle, PostgreSQL, MySQL, MariaDB, Redshift 
-● Operating Systems: Linux, MacOS, Windows, RHEL, Ubuntu, Debian, Fedora 
-● Tools/Technologies: Git, Apache Tomcat, AWS Simple Queue Service, SSH, Postman, Mailhog,    Object-Oriented Programming, DB Design, Microservices, RESTful APIs, XML, JSON, JIRA, Jersey, Wireshark
+=== Skills ===
+- Programming Languages: Java, PHP, SQL, PL/SQL, Bash, Regex, Python, Classic ASP, JavaScript, jQuery, React, C++, MIPS, CLIPS, Haskell
+- Programming Skills: Object-Oriented Programming, Design Patterns, Unit Testing, Debugging, Database normalization, Agile & Scrum, Continuous Integration & Continuous Deployment (CI/CD), REST API design & development
+- Frameworks/Libraries: Spring, Spring Boot, Struts, Struts 2, Hibernate, Jersey, JUnit, Bootstrap, Codeigniter, Laravel, React, jQuery, Maven, Gradle
+- Databases: Oracle, PostgreSQL, MySQL, MariaDB, Redshift
+- Operating Systems: Linux, MacOS, Windows, RHEL, Ubuntu, Debian, Fedora
+- Tools/Technologies: Git, Apache Tomcat, AWS Simple Queue Service, SSH, Postman, Mailhog, Object-Oriented Programming, DB Design, Microservices, RESTful APIs, XML, JSON, JIRA, Jersey, Wireshark
