@@ -5,6 +5,18 @@ Phone: (850) 445-7361
 LinkedIn: https://www.linkedin.com/in/jeff-chatham-7337a1208/ 
 GitHub: https://github.com/jchatham
 
+=== PROJECT ====
+ResumeGPT
+AI‑Driven Resume Assistant
+Java, Spring Boot, OpenAI API
+https://github.com/jchatham/resumeGPT
+- Developed an LLM-powered RAG system enabling conversational querying of resumes, combining semantic search with GPT‑based generation for context-aware responses.
+- Implemented embedding-based indexing to efficiently retrieve relevant resume content, reducing redundant API calls and improving response relevance.
+- Built robust Spring Boot REST APIs to handle resume ingestion, vector storage, and LLM query orchestration.
+- Integrated OpenAI API for natural language understanding and generation, ensuring precise, human-like interactions.
+- Containerized with Docker for scalable deployment, supporting reproducible environments across development and production.
+- Demonstrates expertise in LLM integration, semantic search, vector databases, and AI-assisted productivity tools.
+
 === EXPERIENCE ===
 Application Systems Programmer III
 Florida Department of Environmental Protection

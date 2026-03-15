@@ -38,7 +38,10 @@ function App() {
     return (
         <div style={{ maxWidth: 700, margin: "auto", padding: 40 }}>
             <h1>ResumeGPT</h1>
-
+            <h2>Jefferey Chatham's Resume AI</h2>
+            <h3>Common prompts include asking about "Contact info", "Experience", "Education", "Projects", "Summarize resume", "Tell me about ResumeGPT", or "Give me an elevator pitch"</h3>
+            <h4>AI hallucinates - check primary sources</h4>
+            <h4><a href="mailto:jeff.chatham@gmail.com">email</a></h4>
             <textarea
                 rows={3}
                 value={question}
@@ -49,7 +52,7 @@ function App() {
                     }
                 }}
                 style={{ width: "100%" }}
-                placeholder="Ask about Jeff's resume. Responses are taking ~10 seconds"
+                placeholder="Ask about Jeff's resume. Responses are taking ~10 seconds and there is no indication that it's working."
             />
 
             <br />
