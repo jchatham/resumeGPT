@@ -1,55 +1,73 @@
 import { useState } from "react";
-import axios from "axios";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 function App() {
-  const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState("");
-
-/*  const ask = async () => {
-    const res = await axios.get("http://localhost:8080/chat", {
-      params: {
-          query: question
-      }
-          setAnswer(res.data);
-    });*/
+    const [question, setQuestion] = useState("");
+    const [answer, setAnswer] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const ask = async () => {
-    const eventSource = new EventSource(
-        "http://localhost:8080/chat/streamingAsk?query="  + encodeURIComponent(question)
-    );
+        if (!question.trim()) return;
+
         setAnswer("");
+        setLoading(true);
 
-        eventSource.onmessage = (event) => {
-            setAnswer(prev => prev + event.data);
-        };
+        try {
+            const response = await fetch(
+                "http://localhost:8080/chat?query=" + encodeURIComponent(question)
+            );
 
-        eventSource.onerror = () => {
-            eventSource.close();
-        };
-  };
+            if (!response.ok) {
+                throw new Error("API error: " + response.status);
+            }
 
-  return (
-      <div style={{maxWidth:"700px", margin:"auto", padding:"40px"}}>
-        <h1>ResumeGPT</h1>
+            const text = await response.text(); // get full response
+            setAnswer(text);
+        } catch (err) {
+            console.error(err);
+            setAnswer("Error fetching answer.");
+        } finally {
+            setLoading(false);
+        }
+    };
+    const cleanAnswer = answer
+        .split("\n")
+        .map(line => line.trimStart()) // remove leading spaces
+        .join("\n");
+    return (
+        <div style={{ maxWidth: 700, margin: "auto", padding: 40 }}>
+            <h1>ResumeGPT</h1>
 
-        <textarea
-            value={question}
-            onChange={(e)=>setQuestion(e.target.value)}
-            rows={4}
-            style={{width:"100%"}}
-            placeholder="Ask something about Jeff's resume..."
-        />
+            <textarea
+                rows={3}
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.ctrlKey && e.key === "Enter") {
+                        ask();
+                    }
+                }}
+                style={{ width: "100%" }}
+                placeholder="Ask about Jeff's experience..."
+            />
 
-        <br/><br/>
+            <br />
+            <br />
 
-        <button onClick={ask}>
-          Ask
-        </button>
+            <button onClick={ask} disabled={loading}>
+                {loading ? "Loading..." : "Ask"}
+            </button>
 
-        <h3>Answer</h3>
-        <p>{answer}</p>
-      </div>
-  );
+            <hr />
+
+            <div>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {cleanAnswer}
+                </ReactMarkdown>
+            </div>
+        </div>
+    );
 }
 
 export default App;

@@ -1,12 +1,11 @@
 ﻿Jefferey Chatham
 Email: Jeff.Chatham@gmail.com
-LinkedIn:https://www.linkedin.com/in/jeff-chatham-7337a1208/ 
-GitHub:https://github.com/jchatham
-Phone:(850) 445-7361
-
+Phone: (850) 445-7361
+LinkedIn: https://www.linkedin.com/in/jeff-chatham-7337a1208/ 
+GitHub: https://github.com/jchatham 
 Experience 
 Application Systems Programmer III | Florida Department of Environmental Protection | Tallahassee, FL June 2015 – November 2020
-● Architected, developed, and maintained critical Java enterprise applications and PHP microservices for a large state agency. 
+● Architected, developed, and maintained critical Java applications/microservices and PHP applications/libraries for a large state agency. 
 ● Spearheaded the development of the department's first Java-based microservice, moving the functionality from an existing Single Sign-On (SSO) portal into a new, secure Jersey-based service, specifically eliminating a potential security vulnerability where usernames and passwords could be transmitted in plaintext. Updated the PHP SSO component to align with the Java authorization/authentication library. 
 ● Led the full rewrite and ongoing maintenance of the SRF (State Revolving Fund) program, a critical federal application managing wastewater, stormwater, and drinking water loans, grants, and legislative projects across Florida. This complex application, required for every state, was prone to constant bug tickets, which were significantly reduced post-rewrite. 
 ● Rewrote the database interaction layer of the SRF application utilizing Regex within IntelliJ IDEA to move all package calls to Hibernate, dramatically accelerating a months-long task to approximately 30 minutes at the package level, applied at the package level using backticks. 
@@ -15,7 +14,6 @@ Application Systems Programmer III | Florida Department of Environmental Protect
 ● Utilized Object-Oriented Programming (OOP) principles to design and implement scalable and maintainable code.
 ● Contributed to various phases of the software development lifecycle, including requirements gathering, design, coding, testing, and deployment. 
 ● Taught several classes, including one on Astrogrep, a grep front-end tool, and wrote comprehensive migration guides and several wiki pages on diverse topics that were used by the whole team (~70 people). 
-● Approved by the CIO for promotion to Software Architect, recognizing leadership and technical expertise. The promotion did not come through, but my personnel file has the approval. 
 ● Skills: Java, PHP, Oracle, PostgreSQL, Apache Tomcat, Linux, Bash, MacOS, Git, Spring Framework, Hibernate, SQL, PL/SQL, Object-Oriented Programming Languages, DB design, AWS, Redshift, Azure, JUnit, SSH, Postman, Mailhog, Bootstrap, Regex, Google Docs, Design Patterns, Data Structures, and MS Office. 
 
 
@@ -56,7 +54,8 @@ Intern | IAIP (Interim Assistant in Research, Florida A&M University) | Tallahas
 Bachelor of Science in Computer Information Science | Florida A&M University (FAMU) | Tallahassee, FL Graduated: May 2014 
 ● GPA: 3.9/4.0 
 ● Summa Cum Laude 
-● Graduated first in major and subcollege 
+
+
 
 
 

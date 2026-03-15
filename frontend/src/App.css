@@ -181,4 +181,11 @@
     right: 0;
     border-right-color: var(--border);
   }
+  .cursor {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
 }

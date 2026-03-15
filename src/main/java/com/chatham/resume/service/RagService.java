@@ -10,6 +10,8 @@ import org.springframework.ai.vectorstore.SimpleVectorStore;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
+import java.util.concurrent.atomic.AtomicReference;
+
 @Service
 public class RagService {
     private static final Logger log = LoggerFactory.getLogger(RagService.class);
@@ -36,10 +38,27 @@ public class RagService {
     }
 
     public Flux<String> streamingAsk(String question) {
+        final AtomicReference<Character> lastCharRef = new AtomicReference<>(' ');
+
         return chatClient.prompt()
                 .user(getPrompt(question))
                 .stream()
-                .content();
+                .content()
+                .map(token -> {
+                    if (token.isEmpty()) return token;
+
+                    char lastChar = lastCharRef.get();
+                    char firstChar = token.charAt(0);
+
+                    // insert a space if previous char and first char are both letters/digits
+                    String result = (Character.isLetterOrDigit(lastChar) && Character.isLetterOrDigit(firstChar))
+                            ? " " + token
+                            : token;
+
+                    // update last char
+                    lastCharRef.set(token.charAt(token.length() - 1));
+                    return result;
+                });
     }
 
     /**
@@ -66,7 +85,8 @@ public class RagService {
         //What's sent out to the API
         String prompt = """
                 Answer the question using the context below.
-
+                Please answer using the text exactly as it appears in the resume, preserving all spaces and punctuation.
+                
                 Context:
                 %s
 
@@ -74,6 +94,7 @@ public class RagService {
                 %s
                 """.formatted(context, question);
 
+        log.info("Prompt {}", prompt);
         log.info("Sending prompt to OpenAI...");
         return prompt;
     }
