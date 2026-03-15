@@ -1,22 +1,29 @@
 package com.chatham.resume.controller;
 
 import com.chatham.resume.service.RagService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Flux;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/chat")
 public class ChatController {
 
-    @Autowired
-    private RagService ragService;
+    private final RagService ragService;
 
-    @GetMapping
+    public ChatController(RagService ragService) {
+        this.ragService = ragService;
+    }
+
+    @GetMapping()
     public String ask(@RequestParam String query) {
         return ragService.ask(query);
+    }
+
+    @GetMapping(value = "streamingAsk", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<String> streamingAsk(@RequestParam String query) {
+        return ragService.streamingAsk(query);
     }
 
     @GetMapping("/debug")

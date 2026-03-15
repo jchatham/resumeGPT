@@ -1,5 +1,6 @@
 package com.chatham.resume.service;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
@@ -7,6 +8,7 @@ import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.SimpleVectorStore;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 @Service
 public class RagService {
@@ -21,6 +23,31 @@ public class RagService {
 
     public String ask(String question) {
 
+        String prompt = getPrompt(question);
+
+        var response = chatClient.prompt()
+                .user(prompt)
+                .call()
+                .content();
+
+        log.info("Received response from OpenAI: {}", response);
+
+        return response;
+    }
+
+    public Flux<String> streamingAsk(String question) {
+        return chatClient.prompt()
+                .user(getPrompt(question))
+                .stream()
+                .content();
+    }
+
+    /**
+     * Used to build prompt, uses vector store to avoid API calls.
+     * @param question user submitted question.
+     * @return the prompt.
+     */
+    private @NonNull String getPrompt(String question) {
         log.info("Vector search for question: {}", question);
         var docs = vectorStore.similaritySearch(
                 SearchRequest.builder()
@@ -48,15 +75,7 @@ public class RagService {
                 """.formatted(context, question);
 
         log.info("Sending prompt to OpenAI...");
-
-        var response = chatClient.prompt()
-                .user(prompt)
-                .call()
-                .content();
-
-        log.info("Received response from OpenAI: {}", response);
-
-        return response;
+        return prompt;
     }
 
 

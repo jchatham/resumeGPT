@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.SimpleVectorStore;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
@@ -23,8 +22,7 @@ import java.util.Map;
 @Service
 public class DocumentLoader {
     private static final Logger log = LoggerFactory.getLogger(DocumentLoader.class);
-    @Autowired
-    private SimpleVectorStore vectorStore;
+    private final SimpleVectorStore vectorStore;
 
     @Value("classpath:static/documents/Chatham-resume.txt")
     private Resource resumeText;
@@ -32,6 +30,10 @@ public class DocumentLoader {
     private Resource resumePDF;
     @Value("${vector.store.name}")
     private String vectorStoreName;
+
+    public DocumentLoader(SimpleVectorStore vectorStore) {
+        this.vectorStore = vectorStore;
+    }
 
     @PostConstruct
     public void init() throws IOException {
