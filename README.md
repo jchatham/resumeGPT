@@ -9,3 +9,5 @@ mvn clean package
 docker build -t resumegpt .
 # $OPEN_API_KEY is an OpenAI API key environmental variable.
 docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY resumegpt
+# Prod version 
+docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY resumegpt:prod
