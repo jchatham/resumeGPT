@@ -22,7 +22,8 @@ Tallahassee, FL June 2015 – November 2020
 - Utilized Object-Oriented Programming (OOP) principles to design and implement scalable and maintainable code
 - Contributed to various phases of the software development lifecycle, including requirements gathering, design, coding, testing, and deployment
 - Taught several classes, including one on Astrogrep, a grep front-end tool, and wrote comprehensive migration guides and several wiki pages on diverse topics that were used by the whole team (~70 people)
-- Skills: Java, PHP, Oracle, PostgreSQL, Apache Tomcat, Linux, Bash, MacOS, Git, Spring Framework, Hibernate, SQL, PL/SQL, Object-Oriented Programming Languages, DB design, AWS, Redshift, Azure, JUnit, SSH, Postman, Mailhog, Bootstrap, Regex, Google Docs, Design Patterns, Data Structures, and MS Office
+- Used Docker to containerize microservices
+- Skills: Java, PHP, Oracle, Docker, PostgreSQL, Apache Tomcat, Linux, Bash, MacOS, Git, Spring Framework, Hibernate, SQL, PL/SQL, Object-Oriented Programming Languages, DB design, AWS, Redshift, Azure, JUnit, SSH, Postman, Mailhog, Bootstrap, Regex, Google Docs, Design Patterns, Data Structures, and MS Office
 
 Application Systems Programmer II
 Florida Department of Environmental Protection
@@ -52,13 +53,13 @@ Tallahassee, FL
 Fall 2012– Spring 2014
 - Contributed to research projects involving data collection and preliminary analysis
 - Developed skills in data organization and basic statistical software
-- Maintained many Macbook Pros that could be checked out by any professor
+- Maintained many Macbook Pro laptops that could be checked out by any professor
 - Skills: MySql, PHP, and MacOS
 
 
 === EDUCATION ===
 Bachelor of Science in Computer Information Science
-Florida A&M University (FAMU)
+Florida A&M University
 Tallahassee, FL
 Graduated: May 2014
 - GPA: 3.9/4.0 
@@ -76,4 +77,4 @@ Graduated May 2006
 - Frameworks/Libraries: Spring, Spring Boot, Struts, Struts 2, Hibernate, Jersey, JUnit, Bootstrap, Codeigniter, Laravel, React, jQuery, Maven, Gradle
 - Databases: Oracle, PostgreSQL, MySQL, MariaDB, Redshift
 - Operating Systems: Linux, MacOS, Windows, RHEL, Ubuntu, Debian, Fedora
-- Tools/Technologies: Git, Apache Tomcat, AWS Simple Queue Service, SSH, Postman, Mailhog, Object-Oriented Programming, DB Design, Microservices, RESTful APIs, XML, JSON, JIRA, Jersey, Wireshark
+- Tools/Technologies: Git, Docker, Apache Tomcat, AWS Simple Queue Service, SSH, Postman, Mailhog, Object-Oriented Programming, DB Design, Microservices, RESTful APIs, XML, JSON, JIRA, Jersey, Wireshark
