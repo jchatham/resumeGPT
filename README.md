@@ -17,6 +17,8 @@ docker build -t resumegpt .
 docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY resumegpt
 # Build for dockerhub:
 docker build -t jeffchatham/resumegpt:latest .
-docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY jeffchatham/resumegpt:latest
 docker tag resumegpt:latest jeffchatham/resumegpt:latest
 docker push jeffchatham/resumegpt:latest
+
+# Run for dockerhub version
+docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY jeffchatham/resumegpt:latest
