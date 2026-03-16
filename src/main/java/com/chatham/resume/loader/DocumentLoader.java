@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -28,8 +27,6 @@ import java.util.Map;
 @Service
 public class DocumentLoader {
     private static final Logger log = LoggerFactory.getLogger(DocumentLoader.class);
-    public static final int CHUNK_SIZE = 200;
-    public static final int MIN_CHUNK_SIZE_CHARS = 350;
 
     private final SimpleVectorStore vectorStore;
 
