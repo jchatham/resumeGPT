@@ -9,7 +9,8 @@ GitHub: https://github.com/jchatham
 ResumeGPT
 AI‑Driven Resume Assistant
 Java, Spring Boot, OpenAI API
-https://github.com/jchatham/resumeGPT
+GitHub: https://github.com/jchatham/resumeGPT
+Live Demo: https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/
 - Developed an LLM-powered RAG system enabling conversational querying of resumes, combining semantic search with GPT‑based generation for context-aware responses.
 - Implemented embedding-based indexing to efficiently retrieve relevant resume content, reducing redundant API calls and improving response relevance.
 - Built robust Spring Boot REST APIs to handle resume ingestion, vector storage, and LLM query orchestration.

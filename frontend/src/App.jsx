@@ -15,7 +15,7 @@ function App() {
 
         try {
             const response = await fetch(
-                "http://localhost:8080/chat?query=" + encodeURIComponent(question)
+                "/chat?query=" + encodeURIComponent(question)
             );
 
             if (!response.ok) {

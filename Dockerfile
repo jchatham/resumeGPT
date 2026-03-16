@@ -26,6 +26,8 @@ FROM eclipse-temurin:21-jdk-jammy
 WORKDIR /app
 COPY --from=backend-build /app/target/resume-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 8080
+# Let Azure route traffic properly
+EXPOSE 80
 
-ENTRYPOINT ["java","-jar","/app/app.jar"]
+# Use $PORT if set, otherwise 8080
+ENTRYPOINT ["sh","-c","java -Dserver.port=${PORT:-8080} -jar /app/app.jar"]
