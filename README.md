@@ -1,7 +1,7 @@
 # ResumeGPT
 [Live Demo](https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/)
 
-Azure might put the live demo to sleep without regular usage. It starts up fast though. 
+Azure is free tier and it might be over quota. Looking into why now. 
 
 Open API reference here:
 
@@ -20,4 +20,4 @@ $OPEN_API_KEY is an OpenAI API key.
     docker push jeffchatham/resumegpt:latest
 
 # Run for dockerhub version
-    docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY jeffchatham/resumegpt:latest
+    docker run -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jeffchatham/resumegpt:latest

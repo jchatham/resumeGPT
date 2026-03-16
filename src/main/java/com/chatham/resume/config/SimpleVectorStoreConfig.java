@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import java.io.File;
 
 /**
- * SimpleVectorStore configuration. In-memory and skips load if vector store json exists.
+ * SimpleVectorStore configuration. In-memory and skips load if vector-store.json exists.
  */
 @Configuration
 public class SimpleVectorStoreConfig {
