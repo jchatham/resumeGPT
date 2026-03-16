@@ -37,6 +37,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-### Keep vector-store.josn out ###
-*.json

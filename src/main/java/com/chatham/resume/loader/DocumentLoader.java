@@ -22,12 +22,12 @@ import java.util.Map;
 @Service
 public class DocumentLoader {
     private static final Logger log = LoggerFactory.getLogger(DocumentLoader.class);
+    public static final int CHUNK_SIZE = 200;
+    public static final int MIN_CHUNK_SIZE_CHARS = 350;
     private final SimpleVectorStore vectorStore;
 
     @Value("classpath:static/documents/Chatham-resume.txt")
     private Resource resumeText;
-    @Value("classpath:static/documents/Chatham-resume.pdf")
-    private Resource resumePDF;
     @Value("${vector.store.name}")
     private String vectorStoreName;
 
@@ -48,7 +48,8 @@ public class DocumentLoader {
 
             //Splits text into chunks for better search
             TokenTextSplitter splitter = TokenTextSplitter.builder()
-                    .withChunkSize(400)
+                    .withChunkSize(CHUNK_SIZE)
+                    .withMinChunkSizeChars(MIN_CHUNK_SIZE_CHARS)
                     .build();
 
             //Create with metadata resume to improve results

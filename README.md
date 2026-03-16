@@ -11,7 +11,7 @@ https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/swagger-ui
 
     mvn clean package spring-boot:run
 
-$OPEN_API_KEY is an OpenAI API key.
+$OPENAI_API_KEY is an OpenAI API key.
 
 
 # Docker build for dockerhub:

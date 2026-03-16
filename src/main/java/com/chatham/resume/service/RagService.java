@@ -15,6 +15,7 @@ import java.util.concurrent.atomic.AtomicReference;
 @Service
 public class RagService {
     private static final Logger log = LoggerFactory.getLogger(RagService.class);
+    public static final int TOP_K = 6;
     private final SimpleVectorStore vectorStore;
     private final ChatClient chatClient;
 
@@ -71,7 +72,7 @@ public class RagService {
         var docs = vectorStore.similaritySearch(
                 SearchRequest.builder()
                         .query(question)
-                        .topK(3)
+                        .topK(TOP_K)
                         .build()
         );
 

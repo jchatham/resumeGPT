@@ -5,7 +5,7 @@ Phone: (850) 445-7361
 LinkedIn: https://www.linkedin.com/in/jeff-chatham-7337a1208/ 
 GitHub: https://github.com/jchatham
 
-=== PROJECT ====
+=== PROJECT ===
 ResumeGPT
 AI‑Driven Resume Assistant
 Java, Spring Boot, OpenAI API
