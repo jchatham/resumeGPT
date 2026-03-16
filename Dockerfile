@@ -26,6 +26,9 @@ FROM eclipse-temurin:21-jdk-jammy
 WORKDIR /app
 COPY --from=backend-build /app/target/resume-0.0.1-SNAPSHOT.jar app.jar
 
+# Copy the pre-built embedding vector store file
+COPY vector-store.json ./vector-store.json
+
 # Let Azure route traffic properly
 EXPOSE 80
 
