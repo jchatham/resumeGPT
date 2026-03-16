@@ -6,6 +6,7 @@ Live Demo URL could change and Azure might put it to sleep without regular usage
 Needs an OpenAI API key set to environmental variable OPEN_API_KEY. 
 
 Open API reference here:
+
 http://localhost:8080/swagger-ui/index.html
 https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/swagger-ui/index.html
 
