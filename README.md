@@ -1,9 +1,7 @@
 # ResumeGPT
 [Live Demo](https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/)
 
-Live Demo URL could change and Azure might put it to sleep without regular usage. It starts up fast though. 
-
-Needs an OpenAI API key set to environmental variable OPEN_API_KEY. 
+Azure might put the live demo to sleep without regular usage. It starts up fast though. 
 
 Open API reference here:
 
@@ -13,7 +11,7 @@ https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/swagger-ui
 
     mvn clean package spring-boot:run
 
-Environmental variable $OPEN_API_KEY is an OpenAI API key.
+$OPEN_API_KEY is an OpenAI API key.
 
 
 # Docker build for dockerhub:
