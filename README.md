@@ -1,7 +1,7 @@
 # ResumeGPT
 [Live Demo](https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/)
 
-Azure is free tier and it might be over quota. Looking into why now. 
+Azure is free tier and it might be over quota. Yes, it's on Central Canada region, but that one had empty slots for App Service Free Tier. 
 
 Open API reference here:
 
