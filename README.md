@@ -1,5 +1,6 @@
 # ResumeGPT
 [Live Demo](https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/)
+
 Live Demo URL could change and Azure might put it to sleep without regular usage. It starts up fast though. 
 
 Needs an OpenAI API key set to environmental variable OPEN_API_KEY. 
