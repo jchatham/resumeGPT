@@ -8,7 +8,6 @@ import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.document.Document;
-import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.SimpleVectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -72,44 +71,32 @@ public class DocumentLoader {
      * @throws JsonProcessingException on error.
      */
     private @NonNull List<Document> getDocuments(Map<String, Object> resumeMap) throws JsonProcessingException {
-        List<Document> sectionDocs = new ArrayList<>();
-        // Convert each section in JSON into a Document
+        List<Document> finalDocs = new ArrayList<>();
+
+        // Iterate each top-level section in JSON
         for (Map.Entry<String, Object> entry : resumeMap.entrySet()) {
             String sectionName = entry.getKey();
             Object sectionContent = entry.getValue();
 
             String textContent;
 
-            // Flatten content depending on type
+            // Flatten content: String stays as-is, Map/List to pretty JSON
             if (sectionContent instanceof String) {
                 textContent = (String) sectionContent;
             } else {
-                // If it's a Map or List, convert to pretty JSON string
                 textContent = objectMapper.writerWithDefaultPrettyPrinter()
                         .writeValueAsString(sectionContent);
             }
 
+            // Metadata stores section name and source
             Map<String, Object> metadata = Map.of(
                     "source", "resume",
                     "section", sectionName
             );
 
-            sectionDocs.add(new Document(textContent, metadata));
+            finalDocs.add(new Document(textContent, metadata));
         }
 
-        // Token splitter for large sections (skip INFO)
-        TokenTextSplitter splitter = TokenTextSplitter.builder().build();
-        List<Document> finalDocs = new ArrayList<>();
-
-        sectionDocs.forEach(doc -> {
-            String section = (String) doc.getMetadata().get("section");
-            if ("INFO".equalsIgnoreCase(section)) {
-                // Keep INFO together
-                finalDocs.add(doc);
-            } else {
-                finalDocs.addAll(splitter.apply(List.of(doc)));
-            }
-        });
         return finalDocs;
     }
 }

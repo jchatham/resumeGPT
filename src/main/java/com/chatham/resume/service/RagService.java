@@ -15,7 +15,8 @@ import java.util.concurrent.atomic.AtomicReference;
 @Service
 public class RagService {
     private static final Logger log = LoggerFactory.getLogger(RagService.class);
-    public static final int TOP_K = 6;
+    //Chunking by section so it's going to bring top 3 sections, but resume only has 5. Oh well.
+    public static final int TOP_K = 3;
     private final SimpleVectorStore vectorStore;
     private final ChatClient chatClient;
 

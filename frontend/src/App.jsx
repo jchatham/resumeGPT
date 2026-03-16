@@ -52,7 +52,7 @@ function App() {
                     }
                 }}
                 style={{ width: "100%" }}
-                placeholder="Ask about Jeff's resume. Responses are taking ~10 seconds and there is no indication that it's working."
+                placeholder="Ask about Jeff's resume. Responses can take a while...."
             />
 
             <br />
