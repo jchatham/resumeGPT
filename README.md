@@ -10,4 +10,6 @@ docker build -t resumegpt .
 # $OPEN_API_KEY is an OpenAI API key.
 docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY resumegpt
 # Prod version 
-docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY resumegpt:prod
+docker build -t jeffchatham/resumegpt:latest .
+docker run -p 8080:8080 -e OPEN_API_KEY=$OPEN_API_KEY jeffchatham/resumegpt:latest
+docker push jchatham/resumegpt:latest
