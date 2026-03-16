@@ -8,6 +8,7 @@ Needs an OpenAI API key set to environmental variable OPEN_API_KEY.
 Open API reference here:
 
 http://localhost:8080/swagger-ui/index.html
+
 https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/swagger-ui/index.html
 
     mvn clean package spring-boot:run
