@@ -41,7 +41,7 @@ function App() {
             <h2>Jefferey Chatham's Resume AI</h2>
             <h3>Common prompts include asking about "Contact info", "Experience", "Education", "Projects", "Summarize resume", "Tell me about ResumeGPT", or "Give me an elevator pitch"</h3>
             <h4>AI hallucinates - check primary sources</h4>
-            <h4><a href="mailto:jeff.chatham@gmail.com">email</a></h4>
+            <h4><a href="mailto:jeffereychatham@protonmail.com">email</a></h4>
             <textarea
                 rows={3}
                 value={question}
