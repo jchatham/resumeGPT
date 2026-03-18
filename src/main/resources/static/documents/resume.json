@@ -16,7 +16,7 @@
         "OpenAI API"
       ],
       "GitHub": "https://github.com/jchatham/resumeGPT",
-      "Live Demo": "https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/",
+      "liveDemoUrl": "https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/",
       "Highlights": [
         "Developed an LLM-powered RAG system enabling conversational querying of resumes, combining semantic search with GPT-based generation for context-aware responses.",
         "Implemented embedding-based indexing to efficiently retrieve relevant resume content, reducing redundant API calls and improving response relevance.",
@@ -29,126 +29,69 @@
   ],
   "professionalExperience": [
     {
-      "Title": "Application Systems Programmer III",
-      "Company": "Florida Department of Environmental Protection",
-      "Location": "Tallahassee, FL",
-      "Dates": "June 2015 – November 2020",
-      "Responsibilities": [
-        "Engineered and enhanced a centralized Single Sign-On (SSO) platform using Spring Boot and React, enabling secure authentication across all agency applications.",
-        "Architected, developed, and maintained critical Java applications/microservices and PHP applications/libraries for a large state agency",
-        "Spearheaded the development of the department's first Java-based microservice, moving functionality from an existing SSO portal into a new Jersey-based service",
-        "Eliminated a security vulnerability in Java-based authentication systems where credentials could be transmitted in plaintext",
-        "Updated the PHP SSO component to align with Java authorization/authentication library",
-        "Led the full rewrite of the SRF (State Revolving Fund) application, significantly reducing bug volume and improving system stability for a critical statewide federal program.",
-        "Rewrote the database interaction layer of the SRF application using Regex within IntelliJ IDEA",
-        "Moved all package calls to Hibernate, reducing a months-long task to ~30 minutes at the package level",
-        "Developed PHP libraries for the MergeToPdf microservice and DepDac (Dynamic Assembly Component), which were instrumental in token handling and secure data exchange",
-        "Managed and optimized Oracle and PostgreSQL databases, ensuring data integrity and application performance",
-        "Utilized Object-Oriented Programming (OOP) principles to design and implement scalable and maintainable code",
-        "Contributed to various phases of the software development lifecycle, including requirements gathering, design, coding, testing, and deployment",
-        "Taught several classes, including one on Astrogrep, a grep front-end tool, and wrote comprehensive migration guides and several wiki pages on diverse topics that were used by the whole team (~70 people)",
-        "Containerized Java microservices using Docker to enable scalable and reproducible deployments",
-        "Deployed and managed Java microservices on Azure, enabling scalable and reliable cloud-based application delivery.",
-        "Administered build server infrastructure and development tools (GitLab, Jira), supporting CI/CD pipelines, managing access control, and improving development workflow efficiency across teams."
+      "title": "Application Systems Programmer III",
+      "company": "Florida Department of Environmental Protection",
+      "location": "Tallahassee, FL",
+      "dates": "June 2015 – November 2020",
+      "responsibilities": [
+        "Engineered and enhanced a centralized Single Sign-On (SSO) platform using Spring Boot and React, enabling secure authentication across all agency applications",
+        "Architected, developed, and maintained critical Java microservices and PHP applications/libraries",
+        "Spearheaded the department's first Java-based microservice, migrating functionality from an existing SSO portal to a Jersey-based service",
+        "Eliminated security vulnerabilities in Java authentication systems",
+        "Updated PHP SSO components to align with Java authorization/authentication libraries",
+        "Led a full rewrite of the SRF (State Revolving Fund) application, reducing bugs and improving stability for a statewide federal program",
+        "Rewrote the database interaction layer of SRF using Regex in IntelliJ IDEA",
+        "Migrated package calls to Hibernate, reducing a months-long task to ~30 minutes",
+        "Developed PHP libraries for MergeToPdf and DepDac for secure data exchange",
+        "Managed Oracle and PostgreSQL databases for performance and data integrity",
+        "Applied OOP principles for scalable and maintainable code",
+        "Contributed to all phases of the software development lifecycle: requirements, design, coding, testing, deployment",
+        "Taught team classes on Astrogrep and created wiki/migration guides for ~70 team members",
+        "Containerized Java microservices with Docker and deployed to Azure for scalable cloud delivery",
+        "Administered build servers and development tools (GitLab, Jira) to support CI/CD pipelines, access control, and team workflow efficiency"
       ],
-      "Skills": [
-        "Java",
-        "Maven",
-        "PHP",
-        "Oracle",
-        "Docker",
-        "PostgreSQL",
-        "Apache Tomcat",
-        "Linux",
-        "Bash",
-        "MacOS",
-        "Git",
-        "Spring Framework",
-        "Hibernate",
-        "SQL",
-        "PL/SQL",
-        "OOP",
-        "DB design",
-        "AWS",
-        "Redshift",
-        "Azure",
-        "JUnit",
-        "SSH",
-        "Postman",
-        "Mailhog",
-        "Bootstrap",
-        "Regex",
-        "Google Docs",
-        "Design Patterns",
-        "Data Structures",
-        "MS Office",
-        "React"
-      ]
+      "skills": ["Java","Spring Boot","React","PHP","Oracle","PostgreSQL","Docker","Hibernate","Jersey","Git","GitLab","Jira","CI/CD","OOP","Regex","SQL","PL/SQL","Bootstrap","Postman","Mailhog","Apache Tomcat","Azure","AWS","JUnit","SSH","Design Patterns","Data Structures","MS Office"]
     },
     {
-      "Title": "Application Systems Programmer II",
-      "Company": "Florida Department of Environmental Protection",
-      "Location": "Tallahassee, FL",
-      "Dates": "May 2014 – June 2015",
-      "Responsibilities": [
-        "Designed and developed the Rez equipment reservation system, a critical application for departmental resource management",
-        "Developed and maintained Java web applications and PHP scripts to support departmental operations",
-        "Worked on a starter project for new application development",
-        "Independently updated the starter project to a new look and feel",
-        "Collaborated with end-users to gather requirements and translate them into functional software solutions",
-        "Conducted rigorous testing and debugging to ensure application stability and reliability",
-        "Assisted in the maintenance and optimization of existing database systems, including MySQL and MariaDB",
-        "Administered build server infrastructure and development tools (GitLab, Jira), supporting CI/CD workflows, managing access and configurations, and improving overall development efficiency."
+      "title": "Application Systems Programmer II",
+      "company": "Florida Department of Environmental Protection",
+      "location": "Tallahassee, FL",
+      "dates": "May 2014 – June 2015",
+      "responsibilities": [
+        "Designed and developed the Rez equipment reservation system for departmental resource management",
+        "Developed and maintained Java web applications and PHP scripts",
+        "Updated starter projects with new look and feel",
+        "Collaborated with end-users to translate requirements into functional software solutions",
+        "Conducted testing and debugging to ensure application stability",
+        "Maintained and optimized MySQL and MariaDB databases",
+        "Administered build server infrastructure and development tools (GitLab, Jira) to support CI/CD workflows"
       ],
-      "Skills": [
-        "Java",
-        "PHP",
-        "MySQL",
-        "MariaDB",
-        "Oracle",
-        "SQL",
-        "PL/SQL",
-        "Linux",
-        "Bash",
-        "Git",
-        "OOP",
-        "DB design",
-        "JUnit",
-        "SSH",
-        "Bootstrap"
-      ]
+      "skills": ["Java","PHP","MySQL","MariaDB","Oracle","SQL","PL/SQL","Linux","Bash","Git","JUnit","Bootstrap","CI/CD"]
     },
     {
-      "Title": "Intern",
-      "Company": "URS Corporation at Kennedy Space Center",
-      "Location": "Merritt Island, FL",
-      "Dates": "Summer 2013",
-      "Responsibilities": [
-        "NASA subcontractor over civil engineering",
-        "Participated in software development projects supporting real estate office and data analysis",
-        "Gained hands-on experience in mission-critical software environment"
-      ]
+      "title": "Intern",
+      "company": "URS Corporation at Kennedy Space Center",
+      "location": "Merritt Island, FL",
+      "dates": "Summer 2013",
+      "responsibilities": [
+        "Participated in software development projects supporting civil engineering and real estate office operations",
+        "Gained hands-on experience in mission-critical software environments"
+      ],
+      "skills": []
     },
     {
-      "Title": "Intern",
-      "Company": "IAIP, Florida A&M University",
-      "Location": "Tallahassee, FL",
-      "Dates": "Fall 2012 – Spring 2014",
-      "Responsibilities": [
+      "title": "Intern",
+      "company": "IAIP, Florida A&M University",
+      "location": "Tallahassee, FL",
+      "dates": "Fall 2012 – Spring 2014",
+      "responsibilities": [
         "Contributed to research projects involving data collection and preliminary analysis",
-        "Developed skills in data organization and basic statistical software",
-        "Maintained many Macbook Pro laptops that could be checked out by any professor",
-        "Managed GitHub for project",
-        "Worked with AWS services to support data processing and application workflows."
+        "Developed skills in data organization and statistical software",
+        "Maintained MacBook Pro laptops for departmental use",
+        "Managed GitHub projects",
+        "Worked with AWS services for data processing and application workflows"
       ],
-      "Skills": [
-        "MySQL",
-        "PHP",
-        "MacOS",
-        "AWS",
-        "GitHub",
-        "SQL"
-      ]
+      "skills": ["GitHub","AWS","MacOS","MySQL","PHP","SQL"]
     }
   ],
   "education": [
@@ -169,7 +112,7 @@
     }
   ],
   "technicalSkills": {
-    "Programming Languages": [
+    "programmingLanguages": [
       "Java",
       "PHP",
       "SQL",
@@ -186,7 +129,7 @@
       "CLIPS",
       "Haskell"
     ],
-    "Programming Skills": [
+    "programmingSkills": [
       "Object-Oriented Programming",
       "Design Patterns",
       "Unit Testing",
@@ -196,7 +139,7 @@
       "Continuous Integration & Continuous Deployment (CI/CD)",
       "REST API design & development"
     ],
-    "Frameworks/Libraries": [
+    "frameworksAndLibraries": [
       "Spring",
       "Spring Boot",
       "Struts",
@@ -219,7 +162,7 @@
       "MariaDB",
       "Redshift"
     ],
-    "Operating Systems": [
+    "operatingSystems": [
       "Linux",
       "MacOS",
       "Windows",
@@ -228,7 +171,7 @@
       "Debian",
       "Fedora"
     ],
-    "Tools/Technologies": [
+    "toolsAndTechnologies": [
       "Git",
       "GitHub",
       "GitLab",
