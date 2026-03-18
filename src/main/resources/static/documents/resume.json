@@ -1,39 +1,45 @@
 {
-  "INFO": {
+  "info": {
     "Name": "Jefferey Chatham",
     "Email": "jeffereychatham@protonmail.com",
     "Phone": "(850) 445-7361",
     "LinkedIn": "https://www.linkedin.com/in/jeff-chatham-7337a1208/",
     "GitHub": "https://github.com/jchatham"
   },
-  "PROJECT": {
-    "Title": "ResumeGPT",
-    "Description": "AI‑Driven Resume Assistant",
-    "Technologies": ["Java", "Spring Boot", "OpenAI API"],
-    "GitHub": "https://github.com/jchatham/resumeGPT",
-    "Live Demo": "https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/",
-    "Highlights": [
-      "Developed an LLM-powered RAG system enabling conversational querying of resumes, combining semantic search with GPT‑based generation for context-aware responses.",
-      "Implemented embedding-based indexing to efficiently retrieve relevant resume content, reducing redundant API calls and improving response relevance.",
-      "Built robust Spring Boot REST APIs to handle resume ingestion, vector storage, and LLM query orchestration.",
-      "Integrated OpenAI API for natural language understanding and generation, ensuring precise, human-like interactions.",
-      "Containerized with Docker for scalable deployment, supporting reproducible environments across development and production.",
-      "Demonstrates expertise in LLM integration, semantic search, vector databases, and AI-assisted productivity tools."
-    ]
-  },
-  "EXPERIENCE": [
+  "projects": [
+    {
+      "Title": "ResumeGPT",
+      "Description": "AI‑Driven Resume Assistant",
+      "Technologies": [
+        "Java",
+        "Spring Boot",
+        "OpenAI API"
+      ],
+      "GitHub": "https://github.com/jchatham/resumeGPT",
+      "Live Demo": "https://resumegpt-fudfcxbjbxcegvbk.canadacentral-01.azurewebsites.net/",
+      "Highlights": [
+        "Developed an LLM-powered RAG system enabling conversational querying of resumes, combining semantic search with GPT-based generation for context-aware responses.",
+        "Implemented embedding-based indexing to efficiently retrieve relevant resume content, reducing redundant API calls and improving response relevance.",
+        "Designed and built Spring Boot REST APIs to handle resume ingestion, vector storage, and LLM query orchestration.",
+        "Integrated OpenAI API for natural language understanding and generation, enabling accurate, human-like responses.",
+        "Containerized the application using Docker and deployed to a cloud-hosted environment, enabling consistent, reproducible builds and streamlined scaling across development and production.",
+        "Architected the system with a modular, service-oriented design, demonstrating expertise in LLM integration, semantic search, and AI-driven applications."
+      ]
+    }
+  ],
+  "professionalExperience": [
     {
       "Title": "Application Systems Programmer III",
       "Company": "Florida Department of Environmental Protection",
       "Location": "Tallahassee, FL",
       "Dates": "June 2015 – November 2020",
       "Responsibilities": [
+        "Engineered and enhanced a centralized Single Sign-On (SSO) platform using Spring Boot and React, enabling secure authentication across all agency applications.",
         "Architected, developed, and maintained critical Java applications/microservices and PHP applications/libraries for a large state agency",
         "Spearheaded the development of the department's first Java-based microservice, moving functionality from an existing SSO portal into a new Jersey-based service",
-        "Eliminated a potential security vulnerability where usernames and passwords could be transmitted in plaintext",
+        "Eliminated a security vulnerability in Java-based authentication systems where credentials could be transmitted in plaintext",
         "Updated the PHP SSO component to align with Java authorization/authentication library",
-        "Led the full rewrite and ongoing maintenance of the SRF (State Revolving Fund) program, a critical federal application managing wastewater, stormwater, and drinking water loans, grants, and legislative projects across Florida",
-        "This complex application, required for every state, was prone to constant bug tickets, which were significantly reduced post-rewrite",
+        "Led the full rewrite of the SRF (State Revolving Fund) application, significantly reducing bug volume and improving system stability for a critical statewide federal program.",
         "Rewrote the database interaction layer of the SRF application using Regex within IntelliJ IDEA",
         "Moved all package calls to Hibernate, reducing a months-long task to ~30 minutes at the package level",
         "Developed PHP libraries for the MergeToPdf microservice and DepDac (Dynamic Assembly Component), which were instrumental in token handling and secure data exchange",
@@ -41,9 +47,43 @@
         "Utilized Object-Oriented Programming (OOP) principles to design and implement scalable and maintainable code",
         "Contributed to various phases of the software development lifecycle, including requirements gathering, design, coding, testing, and deployment",
         "Taught several classes, including one on Astrogrep, a grep front-end tool, and wrote comprehensive migration guides and several wiki pages on diverse topics that were used by the whole team (~70 people)",
-        "Used Docker to containerize microservices"
+        "Containerized Java microservices using Docker to enable scalable and reproducible deployments",
+        "Deployed and managed Java microservices on Azure, enabling scalable and reliable cloud-based application delivery.",
+        "Administered build server infrastructure and development tools (GitLab, Jira), supporting CI/CD pipelines, managing access control, and improving development workflow efficiency across teams."
       ],
-      "Skills": ["Java", "PHP", "Oracle", "Docker", "PostgreSQL", "Apache Tomcat", "Linux", "Bash", "MacOS", "Git", "Spring Framework", "Hibernate", "SQL", "PL/SQL", "OOP", "DB design", "AWS", "Redshift", "Azure", "JUnit", "SSH", "Postman", "Mailhog", "Bootstrap", "Regex", "Google Docs", "Design Patterns", "Data Structures", "MS Office"]
+      "Skills": [
+        "Java",
+        "Maven",
+        "PHP",
+        "Oracle",
+        "Docker",
+        "PostgreSQL",
+        "Apache Tomcat",
+        "Linux",
+        "Bash",
+        "MacOS",
+        "Git",
+        "Spring Framework",
+        "Hibernate",
+        "SQL",
+        "PL/SQL",
+        "OOP",
+        "DB design",
+        "AWS",
+        "Redshift",
+        "Azure",
+        "JUnit",
+        "SSH",
+        "Postman",
+        "Mailhog",
+        "Bootstrap",
+        "Regex",
+        "Google Docs",
+        "Design Patterns",
+        "Data Structures",
+        "MS Office",
+        "React"
+      ]
     },
     {
       "Title": "Application Systems Programmer II",
@@ -57,9 +97,26 @@
         "Independently updated the starter project to a new look and feel",
         "Collaborated with end-users to gather requirements and translate them into functional software solutions",
         "Conducted rigorous testing and debugging to ensure application stability and reliability",
-        "Assisted in the maintenance and optimization of existing database systems, including MySQL and MariaDB"
+        "Assisted in the maintenance and optimization of existing database systems, including MySQL and MariaDB",
+        "Administered build server infrastructure and development tools (GitLab, Jira), supporting CI/CD workflows, managing access and configurations, and improving overall development efficiency."
       ],
-      "Skills": ["Java", "PHP", "MySQL", "MariaDB", "Oracle", "SQL", "PL/SQL", "Linux", "Bash", "Git", "OOP", "DB design", "JUnit", "SSH", "Bootstrap"]
+      "Skills": [
+        "Java",
+        "PHP",
+        "MySQL",
+        "MariaDB",
+        "Oracle",
+        "SQL",
+        "PL/SQL",
+        "Linux",
+        "Bash",
+        "Git",
+        "OOP",
+        "DB design",
+        "JUnit",
+        "SSH",
+        "Bootstrap"
+      ]
     },
     {
       "Title": "Intern",
@@ -80,12 +137,21 @@
       "Responsibilities": [
         "Contributed to research projects involving data collection and preliminary analysis",
         "Developed skills in data organization and basic statistical software",
-        "Maintained many Macbook Pro laptops that could be checked out by any professor"
+        "Maintained many Macbook Pro laptops that could be checked out by any professor",
+        "Managed GitHub for project",
+        "Worked with AWS services to support data processing and application workflows."
       ],
-      "Skills": ["MySQL", "PHP", "MacOS"]
+      "Skills": [
+        "MySQL",
+        "PHP",
+        "MacOS",
+        "AWS",
+        "GitHub",
+        "SQL"
+      ]
     }
   ],
-  "EDUCATION": [
+  "education": [
     {
       "Degree": "Bachelor of Science in Computer Information Science",
       "School": "Florida A&M University",
@@ -102,12 +168,85 @@
       "Honors": "Graduated with honors"
     }
   ],
-  "SKILLS": {
-    "Programming Languages": ["Java", "PHP", "SQL", "PL/SQL", "Bash", "Regex", "Python", "Classic ASP", "JavaScript", "jQuery", "React", "C++", "MIPS", "CLIPS", "Haskell"],
-    "Programming Skills": ["Object-Oriented Programming", "Design Patterns", "Unit Testing", "Debugging", "Database normalization", "Agile & Scrum", "Continuous Integration & Continuous Deployment (CI/CD)", "REST API design & development"],
-    "Frameworks/Libraries": ["Spring", "Spring Boot", "Struts", "Struts 2", "Hibernate", "Jersey", "JUnit", "Bootstrap", "Codeigniter", "Laravel", "React", "jQuery", "Maven", "Gradle"],
-    "Databases": ["Oracle", "PostgreSQL", "MySQL", "MariaDB", "Redshift"],
-    "Operating Systems": ["Linux", "MacOS", "Windows", "RHEL", "Ubuntu", "Debian", "Fedora"],
-    "Tools/Technologies": ["Git", "Docker", "Apache Tomcat", "AWS Simple Queue Service", "SSH", "Postman", "Mailhog", "OOP", "DB Design", "Microservices", "RESTful APIs", "XML", "JSON", "JIRA", "Jersey", "Wireshark"]
+  "technicalSkills": {
+    "Programming Languages": [
+      "Java",
+      "PHP",
+      "SQL",
+      "PL/SQL",
+      "Bash",
+      "Regex",
+      "Python",
+      "Classic ASP",
+      "JavaScript",
+      "jQuery",
+      "React",
+      "C++",
+      "MIPS",
+      "CLIPS",
+      "Haskell"
+    ],
+    "Programming Skills": [
+      "Object-Oriented Programming",
+      "Design Patterns",
+      "Unit Testing",
+      "Debugging",
+      "Database normalization",
+      "Agile & Scrum",
+      "Continuous Integration & Continuous Deployment (CI/CD)",
+      "REST API design & development"
+    ],
+    "Frameworks/Libraries": [
+      "Spring",
+      "Spring Boot",
+      "Struts",
+      "Struts 2",
+      "Hibernate",
+      "Jersey",
+      "JUnit",
+      "Bootstrap",
+      "Codeigniter",
+      "Laravel",
+      "React",
+      "jQuery",
+      "Maven",
+      "Gradle"
+    ],
+    "Databases": [
+      "Oracle",
+      "PostgreSQL",
+      "MySQL",
+      "MariaDB",
+      "Redshift"
+    ],
+    "Operating Systems": [
+      "Linux",
+      "MacOS",
+      "Windows",
+      "RHEL",
+      "Ubuntu",
+      "Debian",
+      "Fedora"
+    ],
+    "Tools/Technologies": [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Docker",
+      "Apache Tomcat",
+      "AWS Simple Queue Service",
+      "SSH",
+      "Postman",
+      "Mailhog",
+      "OOP",
+      "DB Design",
+      "Microservices",
+      "RESTful APIs",
+      "XML",
+      "JSON",
+      "JIRA",
+      "Jersey",
+      "Wireshark"
+    ]
   }
 }
